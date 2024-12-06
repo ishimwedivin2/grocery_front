@@ -7,7 +7,7 @@ const Login = () => {
   return (
     <>
       <div>
-        {/* <Header /> */}
+        <Header />
         <LoginBody />
         {/* <Footer /> */}
       </div>
