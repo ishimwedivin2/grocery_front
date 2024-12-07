@@ -7,11 +7,11 @@ const Footer = () => {
         <p className="footer__text">
           Created by{" "}
           <a
-            href="https://www.linkedin.com/in/ashimwe-cedrick"
+            href="https://www.linkedin.com/in/ishimwedivin2/"
             target="_blank"
             rel="noopener"
           >
-            Ashimwe Rushinga Cedrick
+            Ishimwe Divin
           </a>{" "}
           &copy; 2024 Your Furniture Company
         </p>

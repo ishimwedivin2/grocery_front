@@ -1,6 +1,6 @@
 import React from "react";
-// import Header from "../components/Header";
-// import Footer from "../components/Footer";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import LoginBody from "../components/LoginBody";
 
 const Login = () => {
@@ -9,7 +9,7 @@ const Login = () => {
       <div>
         <Header />
         <LoginBody />
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </>
   );

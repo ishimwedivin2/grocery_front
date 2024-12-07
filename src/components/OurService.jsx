@@ -1,95 +1,149 @@
 import React from "react";
-import "../styles/styles.css";
-import img1 from "../assets/img/chairandtable.png";
-import img2 from "../assets/img/sofa.png";
-import img3 from "../assets/img/repaire.jpg";
+import "../styles/sty.css";
+import img1 from "../assets/img/delivery.jpg";
+import img2 from "../assets/img/greenvege.jpg";
+import img3 from "../assets/img/inyange.jpg";
+import img4 from "../assets/img/pine.jpg";
+import img5 from "../assets/img/support.jpg";
 
 const OurService = () => {
   return (
     <div>
-      <section id="products">
-        <h2>Our Furniture Services</h2>
+      <section id="services">
+        <h2 className="section-heading">Our Grocery Store Services</h2>
         <p className="section-description">
-          Explore our range of services designed to transform your living spaces
-          into beautiful, functional areas that reflect your style and needs.
+          Explore the wide range of services tailored to provide you with the
+          best shopping experience.
         </p>
         <ul className="services">
-          <li className="card-large" id="serv-design">
+          <li className="card-large" id="serv-delivery">
             <div className="card-image">
-              <img src={img1} alt="Furniture Design" />
+              <img src={img1} alt="Grocery Delivery" />
             </div>
             <div className="card-content">
-              <h3>Furniture Design</h3>
-              <span className="subtitle">
-                Creating spaces that reflect your style.
-              </span>
+              <h3>Grocery Delivery</h3>
+              {/* <span className="subtitle">
+                Bringing your essentials right to your doorstep.
+              </span> */}
               <ul>
                 <li>
-                  <a href="#">Living Room Design</a>
-                  <span>$500</span>
+                  <a href="#">Same-Day Delivery</a>
+                  <span>$10</span>
                 </li>
                 <li>
-                  <a href="#">Bedroom Design</a>
-                  <span>$400</span>
+                  <a href="#">Next-Day Delivery</a>
+                  <span>$5</span>
                 </li>
                 <li>
-                  <a href="#">Office Space Design</a>
-                  <span>$600</span>
+                  <a href="#">Bulk Orders</a>
+                  <span>$15</span>
                 </li>
               </ul>
-              <button className="btn-filled-dark">Book Now</button>
+              <button className="btn-filled-dark">Order Now</button>
             </div>
           </li>
-          <li className="card-large" id="serv-custom">
+          <li className="card-large" id="serv-online-order">
             <div className="card-image">
-              <img src={img2} alt="Custom Furniture" />
+              <img src={img2} alt="Online Ordering" />
             </div>
             <div className="card-content">
-              <h3>Custom Furniture</h3>
-              <span className="subtitle">
-                Tailored solutions for your unique needs.
-              </span>
+              <h3>Online Ordering</h3>
+              {/* <span className="subtitle">
+                Shop from the comfort of your home.
+              </span> */}
               <ul>
                 <li>
-                  <a href="#">Bespoke Tables</a>
-                  <span>$700</span>
+                  <a href="#">Mobile App Orders</a>
+                  <span>Free</span>
                 </li>
                 <li>
-                  <a href="#">Custom Chairs</a>
-                  <span>$300</span>
+                  <a href="#">Website Orders</a>
+                  <span>Free</span>
                 </li>
                 <li>
-                  <a href="#">Storage Solutions</a>
-                  <span>$450</span>
+                  <a href="#">Subscription Orders</a>
+                  <span>$20/month</span>
                 </li>
               </ul>
-              <button className="btn-filled-dark">Book Now</button>
+              <button className="btn-filled-dark">Shop Now</button>
             </div>
           </li>
-          <li className="card-large" id="serv-repair">
+          <li className="card-large" id="serv-fresh-produce">
             <div className="card-image">
-              <img src={img3} alt="Furniture Repair" />
+              <img src={img3} alt="Fresh Produce" />
             </div>
             <div className="card-content">
-              <h3>Furniture Repair</h3>
+              <h3>Fresh Produce</h3>
+              {/* <span className="subtitle">
+                Quality fruits and vegetables for your family.
+              </span> */}
+              <ul>
+                <li>
+                  <a href="#">Organic Vegetables</a>
+                  <span>$30/box</span>
+                </li>
+                <li>
+                  <a href="#">Seasonal Fruits</a>
+                  <span>$25/box</span>
+                </li>
+                <li>
+                  <a href="#">Custom Produce Box</a>
+                  <span>$35/box</span>
+                </li>
+              </ul>
+              <button className="btn-filled-dark">Shop Now</button>
+            </div>
+          </li>
+          <li className="card-large" id="serv-catering">
+            <div className="card-image">
+              <img src={img4} alt="Catering Services" />
+            </div>
+            <div className="card-content">
+              <h3>Catering Services</h3>
+              {/* <span className="subtitle">
+                Fresh, delicious meals for your events.
+              </span> */}
+              <ul>
+                <li>
+                  <a href="#">Corporate Events</a>
+                  <span>Contact Us</span>
+                </li>
+                <li>
+                  <a href="#">Private Parties</a>
+                  <span>Contact Us</span>
+                </li>
+                <li>
+                  <a href="#">Custom Menus</a>
+                  <span>Contact Us</span>
+                </li>
+              </ul>
+              <button className="btn-filled-dark">Learn More</button>
+            </div>
+          </li>
+          <li className="card-large" id="serv-support">
+            <div className="card-image">
+              <img src={img5} alt="Customer Support" />
+            </div>
+            <div className="card-content">
+              <h3>Customer Support</h3>
               <span className="subtitle">
-                Restore your furniture to its former glory.
+                We're here to assist you 24/7.
               </span>
               <ul>
                 <li>
-                  <a href="#">Wood Repair</a>
-                  <span>$250</span>
+                  <a href="#">Live Chat</a>
+                  <span>Free</span>
                 </li>
                 <li>
-                  <a href="#">Refinishing Services</a>
-                  <span>$300</span>
+                  <a href="#">Phone Support</a>
+                  <span>Free</span>
                 </li>
                 <li>
-                  <a href="#">Structural Repairs</a>
-                  <span>$400</span>
+                  <a href="#">Email Support</a>
+                  <span>Free</span>
                 </li>
               </ul>
-              <button className="btn-filled-dark">Book Now</button>
+              <button className="btn-filled-dark">Contact Us</button>
             </div>
           </li>
         </ul>

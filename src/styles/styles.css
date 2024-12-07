@@ -385,7 +385,8 @@
   section.hero {
     /*    width: 100%;*/
     height: 55vh;
-    background: var(--brand-02) url("../assets/img/bluesofa-1.png") no-repeat center right;
+    background: #6CBF84 url("../assets/img/grocery.jpg") no-repeat center right;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -617,7 +618,7 @@
   }
 
   #about-us {
-    background-color: #0d324f; /* Light background */
+    background-color: #1abc9c; /* Light background */
     padding: 60px 0; /* Padding for the section */
     text-align: center; /* Center-align the text */
   }
@@ -951,7 +952,7 @@ cursor: pointer;
 padding: .1em .3em;
 }
 #products {
-background-color: #0d324f; /* Section background color */
+background-color: #1abc9c; /* Section background color */
 padding: 40px 20px; /* Padding for the section */
 color: #ebeae9; /* Text color */
 }
@@ -977,6 +978,10 @@ flex-direction: row;
 justify-content: space-around;
 flex-wrap: wrap; /* Allow wrapping on smaller screens */
 list-style: none; /* Remove default list styling */
+}
+
+.services h2{
+  background-color: #0d0d0d;
 }
 
 .card-large {
@@ -1061,7 +1066,7 @@ background-color: #145485; /* Button hover background color */
 
 
 #testimonials {
-background-color: #0d324f; /* Light background for contrast */
+background-color: #1abc9c; /* Light background for contrast */
 padding: 40px 20px; /* Padding for the section */
 color: #333; /* Text color */
 }
@@ -1112,7 +1117,7 @@ margin-bottom: 15px; /* Space below image */
 width: 80px; /* Fixed width for client images */
 height: 80px; /* Fixed height for client images */
 border-radius: 50%; /* Circular images */
-border: 2px solid #145485; /* Border around images */
+border: 2px solid #1abc9c; /* Border around images */
 }
 
 .testimonial-content {
@@ -1139,7 +1144,7 @@ color: #777; /* Lighter color for roles */
 
 
 #e-showroom {
-background-color: #0d324f; /* Section background color */
+/*background-color: #ffffff;  Section background color */
 padding: 40px 20px; /* Padding for the section */
 color: #ebeae9; /* Text color */
 }

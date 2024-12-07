@@ -6,10 +6,10 @@ const Hero = () => {
   return (
     <div>
       <section className="hero">
-        <h1>Your One-Stop Shop for Every Furniture Need!</h1>
+        <h1>Shop Fresh Ingredients for Your Pantry and More!</h1>
 
         <Link to="/products" className="link-no-underline">
-          <button className="button-52">Visit Our Products</button>
+          <button className="button-52">Shop Your Pantry Now</button>
         </Link>
       </section>
     </div>

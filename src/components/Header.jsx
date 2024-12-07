@@ -1,16 +1,18 @@
 import React from "react";
-import "../styles/styles.css";
+import "../styles/header.css";
+
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUserPlus, faSignInAlt, faSearch, faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   return (
     <div>
-      <div className="banner">Get free delivery on orders over 100k rwf</div>
-      <nav>
+      <nav className="header-nav">
         <div id="logo">
-          Light of the World <br />
-          Furniture
+          <Link to="/" className="logo-text">Grocery Store</Link>
         </div>
+
         <ul className="navigation-menu">
           <li>
             <Link to="/">Home</Link>
@@ -19,21 +21,48 @@ const Header = () => {
             <Link to="/products">Products</Link>
           </li>
           <li>
-            <a th:href="'#about-us'">About us</a>
+            <Link to="/about-us">About Us</Link>
           </li>
           <li>
-            <a th:href="'#contact-info'">Contact</a>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
 
+        <div id="search-cart">
+          <input
+            type="text"
+            placeholder="Search for products..."
+            className="search-bar"
+          />
+          <button className="search-button">
+            <FontAwesomeIcon icon={faSearch} /> Search
+          </button>
+          <Link to="/cart" className="cart-icon">
+            <FontAwesomeIcon icon={faShoppingCart} />
+          </Link>
+        </div>
+
         <div id="utility">
+          {/* <Link to="/register" className="link-no-underline">
+            <button className="button-86">
+              <FontAwesomeIcon icon={faUserPlus} /> Get Started
+            </button>
+          </Link> */}
+
           <Link to="/login" className="link-no-underline">
-            <button className="button-86">Login</button>
+            <button className="button-86">
+              <FontAwesomeIcon icon={faSignInAlt} /> Get Started
+            </button>
           </Link>
 
-          <Link to="/register" className="link-no-underline">
-            <button className="button-86">Get Started</button>
-          </Link>
+          {/* <div className="dropdown">
+            <button className="dropdown-button">Account ▼</button>
+            <div className="dropdown-content">
+              <Link to="/profile">Profile</Link>
+              <Link to="/orders">Orders</Link>
+              <Link to="/logout">Logout</Link>
+            </div>
+          </div> */}
         </div>
       </nav>
     </div>

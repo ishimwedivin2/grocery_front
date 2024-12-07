@@ -36,7 +36,7 @@ const Testimonials = () => {
                 "Custom furniture that fits my style perfectly! The team was
                 professional and attentive to my needs."
               </p>
-              <h4 class="client-name">Michael Smith</h4>
+              <h4 class="client-name">Himbazimana Samuel</h4>
               <span class="client-role">Interior Designer</span>
             </div>
           </div>
@@ -49,7 +49,7 @@ const Testimonials = () => {
                 "I love my new sofa! The upholstery service was top-notch, and
                 the quality is outstanding."
               </p>
-              <h4 class="client-name">Emily Davis</h4>
+              <h4 class="client-name">Emily Divin</h4>
               <span class="client-role">Business Owner</span>
             </div>
           </div>
