@@ -13,7 +13,7 @@ const Footer = () => {
           >
             Ishimwe Divin
           </a>{" "}
-          &copy; 2024 Your Furniture Company
+          &copy; 2024 Grocery Store
         </p>
       </footer>
     </div>

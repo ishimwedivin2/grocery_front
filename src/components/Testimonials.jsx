@@ -11,7 +11,7 @@ const Testimonials = () => {
         <h2>What Our Clients Say</h2>
         <p class="section-description">
           Hear from our satisfied customers who have transformed their spaces
-          with our furniture services.
+          with our Grocery services.
         </p>
         <div class="testimonial-container">
           <div class="testimonial-card">
@@ -20,11 +20,10 @@ const Testimonials = () => {
             </div>
             <div class="testimonial-content">
               <p class="quote">
-                "The furniture design service completely transformed my living
-                room! I couldn't be happier with the results."
+                "T."
               </p>
-              <h4 class="client-name">Sarah Johnson</h4>
-              <span class="client-role">Homeowner</span>
+              <h4 class="client-name">Himbazimana Samuel</h4>
+              <span class="client-role">Client</span>
             </div>
           </div>
           <div class="testimonial-card">
@@ -33,11 +32,10 @@ const Testimonials = () => {
             </div>
             <div class="testimonial-content">
               <p class="quote">
-                "Custom furniture that fits my style perfectly! The team was
-                professional and attentive to my needs."
+                "Custom."
               </p>
-              <h4 class="client-name">Himbazimana Samuel</h4>
-              <span class="client-role">Interior Designer</span>
+              <h4 class="client-name">Kayigamba Aime Dukunde</h4>
+              <span class="client-role">Client</span>
             </div>
           </div>
           <div class="testimonial-card">
@@ -46,11 +44,10 @@ const Testimonials = () => {
             </div>
             <div class="testimonial-content">
               <p class="quote">
-                "I love my new sofa! The upholstery service was top-notch, and
-                the quality is outstanding."
+                "I."
               </p>
-              <h4 class="client-name">Emily Divin</h4>
-              <span class="client-role">Business Owner</span>
+              <h4 class="client-name">Bizimungu Aristide</h4>
+              <span class="client-role">Client</span>
             </div>
           </div>
         </div>
