@@ -18,6 +18,10 @@ import UserProfile from "./pages/UserProfile";
 import Notification from "./pages/Notification";
 import ExportData from "./pages/ExportData";
 import Seller from "./pages/Seller";
+import AboutUsPage from "./pages/AboutUsPage"; // Updated import
+
+
+
 
 const router = createBrowserRouter([
   {
@@ -87,6 +91,10 @@ const router = createBrowserRouter([
   {
     path: "/seller",
     element: <Seller />,
+  },
+  {
+    path: "/aboutus",
+    element: <AboutUsPage />, // Updated route
   },
 ]);
 

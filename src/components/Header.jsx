@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserPlus, faSignInAlt, faSearch, faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 
+
 const Header = () => {
   return (
     <div>
@@ -21,7 +22,7 @@ const Header = () => {
             <Link to="/products">Products</Link>
           </li>
           <li>
-            <Link to="/about-us">About Us</Link>
+            <Link to="/aboutus">About Us</Link>
           </li>
           <li>
             <Link to="/contact">Contact</Link>
