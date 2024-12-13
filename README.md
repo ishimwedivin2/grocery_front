@@ -1,12 +1,12 @@
 
 
-# LW E-Furniture Frontend
+# GROCERY STORE Frontend
 
-This is the **frontend** for the **LW E-Furniture** project, built using **React** and **Vite**. It allows users to browse products, receive notifications, and interact with the backend to manage their accounts. The frontend is designed to be responsive, intuitive, and easy to navigate, offering a seamless shopping experience for customers.
+This is the **frontend** for the **Grocery Store** project, built using **React** and **Vite**. It allows users to browse products, receive notifications, and interact with the backend to manage their accounts. The frontend is designed to be responsive, intuitive, and easy to navigate, offering a seamless shopping experience for customers.
 
 ## Business Overview
 
-**LW E-Furniture** is an online platform for buying and selling furniture. The platform provides customers with an easy way to view available products, receive notifications about new updates and offers, and interact with an admin-controlled backend system for managing user accounts and products.
+**Grocery Store** is an online platform for buying and selling furniture. The platform provides customers with an easy way to view available products, receive notifications about new updates and offers, and interact with an admin-controlled backend system for managing user accounts and products.
 
 In the future, we plan to introduce additional features such as product purchasing, order management, and payment integration, enabling users to not only browse but also purchase furniture directly through the platform.
 
@@ -40,12 +40,12 @@ Make sure you have **Node.js** and **npm** installed on your system.
 ### Steps to Set Up the Project
 1. Clone the repository:
    
-   git clone https://github.com/rushinga/lw-efurniture-frontend.git
+   git clone https://github.com/ishimwedivin2/grocerystore-frontend.git
    
 
 2. Navigate to the project directory:
    
-   cd lw-efurniture-frontend
+   cd grocery-frontend
    
 
 3. Install dependencies:
@@ -58,7 +58,7 @@ Make sure you have **Node.js** and **npm** installed on your system.
    npm run dev
    
 
-   This will launch the application at `http://localhost:3000`.
+   This will launch the application at `http://localhost:5173`.
 
 ## How to Sign Up and Sign In
 
