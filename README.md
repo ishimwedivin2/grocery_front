@@ -40,7 +40,7 @@ Make sure you have **Node.js** and **npm** installed on your system.
 ### Steps to Set Up the Project
 1. Clone the repository:
    
-   git clone https://github.com/ishimwedivin2/grocery-front.git
+   git clone https://github.com/ishimwedivin2/grocery_front
    
 
 2. Navigate to the project directory:
