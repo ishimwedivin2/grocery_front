@@ -14,7 +14,7 @@ const UserMgtBody = () => {
 
   const fetchUsers = async () => {
     const response = await fetch(
-      `http://localhost:9090/admin/users?pageNo=${currentPage}&pageSize=${pageSize}`
+      `https://grocerybackend-production.up.railway.app/admin/users?pageNo=${currentPage}&pageSize=${pageSize}`
     );
     const data = await response.json();
     setUsers(data.users);
@@ -23,7 +23,7 @@ const UserMgtBody = () => {
 
   const handleDelete = async (userId) => {
     const response = await fetch(
-      `http://localhost:9090/admin/users/delete/${userId}`,
+      `https://grocerybackend-production.up.railway.app/admin/users/delete/${userId}`,
       {
         method: "POST",
       }

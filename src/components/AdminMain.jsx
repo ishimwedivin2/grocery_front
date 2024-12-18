@@ -9,7 +9,7 @@ function AdminMain() {
   useEffect(() => {
     const fetchTotalUsers = async () => {
       try {
-        const response = await fetch("http://localhost:9090/admin/total-users");
+        const response = await fetch("https://grocerybackend-production.up.railway.app/admin/total-users");
         const data = await response.json();
         setTotalUsers(data);
       } catch (error) {
@@ -21,7 +21,7 @@ function AdminMain() {
     const fetchRecentActivity = async () => {
       try {
         const response = await fetch(
-          "http://localhost:9090/admin/recent-activity"
+          "https://grocerybackend-production.up.railway.app/admin/recent-activity"
         );
         const data = await response.json();
         setRecentActivity(data);
@@ -37,16 +37,16 @@ function AdminMain() {
   return (
     <main className="main-content">
       <div className="container">
-        <h1 className="mb-4">Welcome to the Admin Dashboard</h1>
+        <h1 className="mb-4">Admin Dashboard</h1>
 
         <div className="row mb-4">
           <div className="col-md-4">
             <div className="card text-white bg-primary mb-3">
-              <div className="card-header">Total Users</div>
+              <div className="card-header">Total of all Users</div>
               <div className="card-body">
                 <h5 className="card-title">{totalUsers}</h5>
                 <p className="card-text">
-                  Total registered users in the system.
+                  Total registered users.
                 </p>
               </div>
             </div>

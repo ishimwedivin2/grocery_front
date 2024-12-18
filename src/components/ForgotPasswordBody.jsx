@@ -18,7 +18,7 @@ const ForgotPasswordBody = () => {
     setError(""); // Reset errors
 
     try {
-      const response = await fetch("http://localhost:9090/forgot-password", {
+      const response = await fetch("https://grocerybackend-production.up.railway.app/forgot-password", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

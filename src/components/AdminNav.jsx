@@ -11,7 +11,7 @@ const Navbar = ({ active, language, onLanguageChange }) => {
   return (
     <nav className="navbar">
       <a href="/admin" className="brand">
-        e-Furniture Admin
+        Grocery Store Admin
       </a>
 
       <div className="nav-links">
@@ -19,15 +19,15 @@ const Navbar = ({ active, language, onLanguageChange }) => {
           href="/usermgt"
           className={`nav-link ${active === "users" ? "active" : ""}`}
         >
-          <i className="fas fa-users"></i>
+          <i className=""></i>
           <span>Users</span>
         </a>
         <a
           href="/admin/furniture"
           className={`nav-link ${active === "furniture" ? "active" : ""}`}
         >
-          <i className="fas fa-couch"></i>
-          <span>Furniture</span>
+          <i className=""></i>
+          <span>Product</span>
         </a>
         <a
           href="/admin/orders"
@@ -40,15 +40,15 @@ const Navbar = ({ active, language, onLanguageChange }) => {
           href="/admin/notifications"
           className={`nav-link ${active === "notifications" ? "active" : ""}`}
         >
-          <i className="fas fa-bell"></i>
+          <i className=""></i>
           <span>Notifications</span>
         </a>
         <a
           href="/admin/user-role-stats"
           className={`nav-link ${active === "analytics" ? "active" : ""}`}
         >
-          <i className="fas fa-chart-line"></i>
-          <span>Analytics</span>
+          <i className=""></i>
+          <span>User Statistics</span>
         </a>
       </div>
 
@@ -71,7 +71,7 @@ const Navbar = ({ active, language, onLanguageChange }) => {
         </select> */}
 
         <a className="dropdown-item" onClick={handleLogout}>
-          <i className="fas fa-sign-out-alt"></i>
+          <i className=""></i>
           Logout
         </a>
         {/* <div className="profile-section">

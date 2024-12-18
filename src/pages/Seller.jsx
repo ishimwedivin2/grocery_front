@@ -19,7 +19,7 @@ function Seller() {
   const fetchNotifications = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:9090/notifications/user/unread"
+        "https://grocerybackend-production.up.railway.app/notifications/user/unread"
       );
       setNotifications(response.data);
     } catch (error) {
@@ -30,7 +30,7 @@ function Seller() {
   const markAllAsRead = async () => {
     try {
       await axios.put(
-        "http://localhost:9090/notifications/user/mark-all-as-read"
+        "https://grocerybackend-production.up.railway.app/notifications/user/mark-all-as-read"
       );
       setNotifications([]);
     } catch (error) {

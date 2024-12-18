@@ -150,7 +150,7 @@ const Auth = () => {
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:9090/register", {
+      const response = await fetch("https://grocerybackend-production.up.railway.app/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -184,7 +184,7 @@ const Auth = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:9090/login", {
+      const response = await fetch("https://grocerybackend-production.up.railway.app/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

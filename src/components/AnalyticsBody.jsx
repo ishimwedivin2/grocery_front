@@ -34,7 +34,7 @@ const AnalyticsBody = () => {
   });
 
   useEffect(() => {
-    fetch("http://localhost:9090/admin/user-role-stats")
+    fetch("https://grocerybackend-production.up.railway.app/admin/user-role-stats")
       .then((response) => response.json())
       .then((data) => {
         if (data && Object.keys(data).length > 0) {

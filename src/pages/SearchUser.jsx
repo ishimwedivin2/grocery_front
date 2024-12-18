@@ -18,7 +18,7 @@ function SearchUser() {
 
     try {
       const response = await fetch(
-        `http://localhost:9090/admin/search/results?username=${username}`
+        `https://grocerybackend-production.up.railway.app/admin/search/results?username=${username}`
       );
 
       if (!response.ok) {
