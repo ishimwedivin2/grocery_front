@@ -51,7 +51,7 @@ const EditUser = () => {
 
     try {
       const response = await fetch(
-        `http://localhost:8080/admin/users/update/${id}`,
+        `https://grocerybackend-production.up.railway.app/admin/users/update/${id}`,
         {
           method: "PUT", // Use PUT for updating data
           headers: {
