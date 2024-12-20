@@ -29,7 +29,7 @@ const AddUser = () => {
     // You can replace this with actual form submission logic, like an API call
     console.log("User Added:", user);
 
-    const response = await fetch("https://grocerybackend-production.up.railway.app/register", {
+    const response = await fetch("https://lw-efurniture-backend-production.up.railway.app/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
