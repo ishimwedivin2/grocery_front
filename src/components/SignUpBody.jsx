@@ -165,7 +165,7 @@ const Auth = () => {
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("https://grocerybackend-production.up.railway.app/register", {
+      const response = await fetch("https://lw-efurniture-backend-production.up.railway.app/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -199,7 +199,7 @@ const Auth = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("https://grocerybackend-production.up.railway.app/login", {
+      const response = await fetch("https://lw-efurniture-backend-production.up.railway.app/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
