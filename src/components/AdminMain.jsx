@@ -37,7 +37,7 @@ function AdminMain() {
   return (
     <main className="main-content">
       <div className="container">
-        <h1 className="mb-4">Admin Dashboard</h1>
+        <h1 className="mb-4">Admin Management Dashboard</h1>
 
         <div className="row mb-4">
           <div className="col-md-4">
