@@ -14,16 +14,15 @@ function ProductShow() {
 
   return (
     <section id="e-showroom">
-      <h2>Our E-Showroom</h2>
+      <h2>Our E-prod</h2>
       <p className="section-description">
-        Explore our exclusive collection of furniture products designed to
-        enhance your living spaces.
+        Explore our exclusive collection of products.
       </p>
 
       {/* Living Room Furniture */}
       <div className="category">
         <div className="category-header">
-          <h3>Living Room Furniture</h3>
+          <h3>Grocery Products</h3>
         </div>
         <div className="product-grid">
           <div className="product-card">
@@ -31,8 +30,8 @@ function ProductShow() {
               <img src="/img/sofa.jpg" alt="Elegant Sofa" />
             </div>
             <div className="product-details">
-              <h3>Elegant Sofa</h3>
-              <p className="price">$799</p>
+              <h3>Mango</h3>
+              <p className="price">$7</p>
               <button className="btn-filled-dark" onClick={promptLogin}>
                 Buy Now
               </button>
@@ -43,8 +42,8 @@ function ProductShow() {
               <img src="/img/coffee-table.jpg" alt="Modern Coffee Table" />
             </div>
             <div className="product-details">
-              <h3>Modern Coffee Table</h3>
-              <p className="price">$299</p>
+              <h3>Coffee</h3>
+              <p className="price">$2</p>
               <button className="btn-filled-dark" onClick={promptLogin}>
                 Buy Now
               </button>
@@ -55,8 +54,8 @@ function ProductShow() {
               <img src="/img/armchair.jpg" alt="Comfortable Armchair" />
             </div>
             <div className="product-details">
-              <h3>Comfortable Armchair</h3>
-              <p className="price">$499</p>
+              <h3>Pine Apple</h3>
+              <p className="price">$4</p>
               <button className="btn-filled-dark" onClick={promptLogin}>
                 Buy Now
               </button>
@@ -67,8 +66,8 @@ function ProductShow() {
               <img src="/img/entertainment-unit.jpg" alt="Entertainment Unit" />
             </div>
             <div className="product-details">
-              <h3>Entertainment Unit</h3>
-              <p className="price">$599</p>
+              <h3>Apple</h3>
+              <p className="price">$5</p>
               <button className="btn-filled-dark" onClick={promptLogin}>
                 Buy Now
               </button>
@@ -79,8 +78,8 @@ function ProductShow() {
               <img src="/img/entertainment-unit.jpg" alt="Entertainment Unit" />
             </div>
             <div className="product-details">
-              <h3>Entertainment Unit</h3>
-              <p className="price">$599</p>
+              <h3>Orange</h3>
+              <p className="price">$3</p>
               <button className="btn-filled-dark" onClick={promptLogin}>
                 Buy Now
               </button>
@@ -91,8 +90,8 @@ function ProductShow() {
               <img src="/img/entertainment-unit.jpg" alt="Entertainment Unit" />
             </div>
             <div className="product-details">
-              <h3>Entertainment Unit</h3>
-              <p className="price">$599</p>
+              <h3>Avocado</h3>
+              <p className="price">$5</p>
               <button className="btn-filled-dark" onClick={promptLogin}>
                 Buy Now
               </button>
@@ -103,8 +102,8 @@ function ProductShow() {
               <img src="/img/entertainment-unit.jpg" alt="Entertainment Unit" />
             </div>
             <div className="product-details">
-              <h3>Entertainment Unit</h3>
-              <p className="price">$599</p>
+              <h3>Milk</h3>
+              <p className="price">$8</p>
               <button className="btn-filled-dark" onClick={promptLogin}>
                 Buy Now
               </button>
@@ -115,8 +114,8 @@ function ProductShow() {
               <img src="/img/entertainment-unit.jpg" alt="Entertainment Unit" />
             </div>
             <div className="product-details">
-              <h3>Entertainment Unit</h3>
-              <p className="price">$599</p>
+              <h3>Vegetable</h3>
+              <p className="price">$4</p>
               <button className="btn-filled-dark" onClick={promptLogin}>
                 Buy Now
               </button>
