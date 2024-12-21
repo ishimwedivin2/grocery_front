@@ -34,7 +34,7 @@ const AnalyticsBody = () => {
   });
 
   useEffect(() => {
-    fetch("https://lw-efurniture-backend-production.up.railway.app/admin/user-role-stats")
+    fetch("https://webtechcontentbackend-production.up.railway.app/admin/user-role-stats")
       .then((response) => response.json())
       .then((data) => {
         if (data && Object.keys(data).length > 0) {

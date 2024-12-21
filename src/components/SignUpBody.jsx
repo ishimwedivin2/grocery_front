@@ -165,7 +165,7 @@ const Auth = () => {
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("https://lw-efurniture-backend-production.up.railway.app/register", {
+      const response = await fetch("https://webtechcontentbackend-production.up.railway.app/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

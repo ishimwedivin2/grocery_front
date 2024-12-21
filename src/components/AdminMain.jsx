@@ -9,7 +9,7 @@ function AdminMain() {
   useEffect(() => {
     const fetchTotalUsers = async () => {
       try {
-        const response = await fetch("hhttps://lw-efurniture-backend-production.up.railway.app/admin/total-users");
+        const response = await fetch("https://webtechcontentbackend-production.up.railway.app/admin/total-users");
         const data = await response.json();
         setTotalUsers(data);
       } catch (error) {
@@ -21,7 +21,7 @@ function AdminMain() {
     const fetchRecentActivity = async () => {
       try {
         const response = await fetch(
-          "https://lw-efurniture-backend-production.up.railway.app/admin/recent-activity"
+          "https://webtechcontentbackend-production.up.railway.app/admin/recent-activity"
         );
         const data = await response.json();
         setRecentActivity(data);

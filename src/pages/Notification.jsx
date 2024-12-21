@@ -21,7 +21,7 @@ const Notification = () => {
     try {
       // Send a POST request to the backend
       const response = await axios.post(
-        `https://lw-efurniture-backend-production.up.railway.app/notifications/send?title=${title}&message=${message}`
+        `https://webtechcontentbackend-production.up.railway.app/notifications/send?title=${title}&message=${message}`
       );
 
       // Handle success

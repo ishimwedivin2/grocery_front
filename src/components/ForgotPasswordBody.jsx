@@ -18,7 +18,7 @@ const ForgotPasswordBody = () => {
     setError(""); // Reset errors
 
     try {
-      const response = await fetch("https://lw-efurniture-backend-production.up.railway.app/forgot-password", {
+      const response = await fetch("https://webtechcontentbackend-production.up.railway.app/forgot-password", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

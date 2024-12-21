@@ -18,7 +18,7 @@ function SearchUser() {
 
     try {
       const response = await fetch(
-        `https://lw-efurniture-backend-production.up.railway.app/admin/search/results?username=${username}`
+        `https://webtechcontentbackend-production.up.railway.app/admin/search/results?username=${username}`
       );
 
       if (!response.ok) {
