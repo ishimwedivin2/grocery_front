@@ -9,7 +9,7 @@ function AdminMain() {
   useEffect(() => {
     const fetchTotalUsers = async () => {
       try {
-        const response = await fetch("hhttps://lw-efurniture-backend-production.up.railway.app/admin/total-users");
+        const response = await fetch("https://lw-efurniture-backend-production.up.railway.app/admin/total-users");
         const data = await response.json();
         setTotalUsers(data);
       } catch (error) {
