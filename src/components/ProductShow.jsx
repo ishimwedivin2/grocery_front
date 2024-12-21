@@ -27,7 +27,7 @@ function ProductShow() {
         <div className="product-grid">
           <div className="product-card">
             <div className="product-image">
-              <img src="/img/sofa.jpg" alt="Elegant Sofa" />
+              <img src="/img/sofa.jpg" alt="M" />
             </div>
             <div className="product-details">
               <h3>Mango</h3>
@@ -39,7 +39,7 @@ function ProductShow() {
           </div>
           <div className="product-card">
             <div className="product-image">
-              <img src="/img/coffee-table.jpg" alt="Modern Coffee Table" />
+              <img src="/img/coffee-table.jpg" alt="M" />
             </div>
             <div className="product-details">
               <h3>Coffee</h3>
@@ -51,7 +51,7 @@ function ProductShow() {
           </div>
           <div className="product-card">
             <div className="product-image">
-              <img src="/img/armchair.jpg" alt="Comfortable Armchair" />
+              <img src="/img/armchair.jpg" alt="C" />
             </div>
             <div className="product-details">
               <h3>Pine Apple</h3>
@@ -63,7 +63,7 @@ function ProductShow() {
           </div>
           <div className="product-card">
             <div className="product-image">
-              <img src="/img/entertainment-unit.jpg" alt="Entertainment Unit" />
+              <img src="/img/entertainment-unit.jpg" alt="G" />
             </div>
             <div className="product-details">
               <h3>Apple</h3>
@@ -75,7 +75,7 @@ function ProductShow() {
           </div>
           <div className="product-card">
             <div className="product-image">
-              <img src="/img/entertainment-unit.jpg" alt="Entertainment Unit" />
+              <img src="/img/entertainment-unit.jpg" alt="G" />
             </div>
             <div className="product-details">
               <h3>Orange</h3>
@@ -87,7 +87,7 @@ function ProductShow() {
           </div>
           <div className="product-card">
             <div className="product-image">
-              <img src="/img/entertainment-unit.jpg" alt="Entertainment Unit" />
+              <img src="/img/entertainment-unit.jpg" alt="G" />
             </div>
             <div className="product-details">
               <h3>Avocado</h3>
@@ -99,7 +99,7 @@ function ProductShow() {
           </div>
           <div className="product-card">
             <div className="product-image">
-              <img src="/img/entertainment-unit.jpg" alt="Entertainment Unit" />
+              <img src="/img/entertainment-unit.jpg" alt="G" />
             </div>
             <div className="product-details">
               <h3>Milk</h3>
@@ -111,7 +111,7 @@ function ProductShow() {
           </div>
           <div className="product-card">
             <div className="product-image">
-              <img src="/img/entertainment-unit.jpg" alt="Entertainment Unit" />
+              <img src="/img/entertainment-unit.jpg" alt="E" />
             </div>
             <div className="product-details">
               <h3>Vegetable</h3>
