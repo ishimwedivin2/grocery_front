@@ -528,6 +528,7 @@ const Auth = () => {
               required
             >
               <option value="" disabled>Select Role</option>
+              <option value="ROLE_ADMIN">ADMIN</option>
               <option value="ROLE_USER">Customer</option>
               <option value="ROLE_SELLER">Seller</option>
             </select>
