@@ -115,6 +115,218 @@
 
 
 
+// import React, { useState } from 'react';
+// import { useNavigate } from 'react-router-dom';
+// import "../styles/loginStyles.css";
+
+// const Auth = () => {
+//   const navigate = useNavigate();
+//   const [formData, setFormData] = useState({
+//     username: '',
+//     password: '',
+//     email: '',
+//     phoneNumber: '',
+//     firstName: '',
+//     lastName: '',
+//     role: 'ROLE_USER',
+//   });
+
+//   const [loginData, setLoginData] = useState({
+//     username: '',
+//     password: '',
+//   });
+
+//   const [message, setMessage] = useState('');
+//   const [isRegistering, setIsRegistering] = useState(false);
+
+//   const handleRegisterChange = (e) => {
+//     setFormData({ ...formData, [e.target.name]: e.target.value });
+//   };
+
+//   const handleLoginChange = (e) => {
+//     setLoginData({ ...loginData, [e.target.name]: e.target.value });
+//   };
+
+//   const handleRegister = async (e) => {
+//     e.preventDefault();
+//     try {
+//       const response = await fetch("https://webtechcontentbackend-production.up.railway.app/register", {
+//         method: "POST",
+//         headers: {
+//           "Content-Type": "application/json",
+//         },
+//         body: JSON.stringify(formData),
+//       });
+
+//       const data = await response.json();
+//       if (response.ok) {
+//         setMessage('Registration successful!');
+//         setIsRegistering(false); // Switch to login view
+//       } else {
+//         setMessage(data.message || 'Error registering');
+//       }
+
+//       setFormData({
+//         username: '',
+//         password: '',
+//         email: '',
+//         phoneNumber: '',
+//         firstName: '',
+//         lastName: '',
+//         role: 'ROLE_USER',
+//       });
+//     } catch (error) {
+//       console.error(error);
+//       setMessage('');
+//     }
+//   };
+
+//   const handleLogin = async (e) => {
+//     e.preventDefault();
+//     try {
+//       const response = await fetch("https://webtechcontentbackend-production.up.railway.app/login", {
+//         method: "POST",
+//         headers: {
+//           "Content-Type": "application/json",
+//         },
+//         body: JSON.stringify(loginData),
+//       });
+
+//       const data = await response.json();
+//       if (response.ok && data.status === 'success') {
+//         const { role, token } = data;
+//         localStorage.setItem('token', token);
+//         localStorage.setItem('role', role);
+
+//         setMessage('Login successful!');
+//         if (role === 'ROLE_ADMIN') navigate('/admin');
+//         else if (role === 'ROLE_SELLER') navigate('/seller');
+//         else if (role === 'ROLE_USER') navigate('/customer');
+//       } else {
+//         setMessage(data.message || 'Login failed');
+//       }
+//     } catch (error) {
+//       setMessage(error.message || 'Error logging in');
+//     }
+//   };
+
+//   return (
+//     <div className="login-page auth-page">
+//       <div className={`container ${isRegistering ? 'active' : ''}`} id="container">
+//         {/* Sign Up Form */}
+//         <div className="form-container sign-up">
+//           <form onSubmit={handleRegister}>
+//             <h1>Create Account</h1>
+//             <input
+//               type="text"
+//               name="username"
+//               placeholder="Username"
+//               value={formData.username}
+//               onChange={handleRegisterChange}
+//               required
+//             />
+//             <input
+//               type="text"
+//               name="firstName"
+//               placeholder="First Name"
+//               value={formData.firstName}
+//               onChange={handleRegisterChange}
+//               required
+//             />
+//             <input
+//               type="text"
+//               name="lastName"
+//               placeholder="Last Name"
+//               value={formData.lastName}
+//               onChange={handleRegisterChange}
+//               required
+//             />
+//             <input
+//               type="email"
+//               name="email"
+//               placeholder="Email"
+//               value={formData.email}
+//               onChange={handleRegisterChange}
+//               required
+//             />
+//             <input
+//               type="password"
+//               name="password"
+//               placeholder="Password"
+//               value={formData.password}
+//               onChange={handleRegisterChange}
+//               required
+//             />
+//             <input
+//               type="tel"
+//               name="phoneNumber"
+//               placeholder="Phone Number"
+//               value={formData.phoneNumber}
+//               onChange={handleRegisterChange}
+//               required
+//             />
+//             <select
+//               name="role"
+//               value={formData.role}
+//               onChange={handleRegisterChange}
+//               required
+//             >
+//               <option value="" disabled>Select Role</option>
+//               <option value="ROLE_USER">Customer</option>
+//               <option value="ROLE_SELLER">Seller</option>
+//             </select>
+//             <button type="submit">Sign Up</button>
+//             {message && <p style={{ color: 'red' }}>{message}</p>}
+//           </form>
+//         </div>
+
+//         {/* Sign In Form */}
+//         <div className="form-container sign-in">
+//           <form onSubmit={handleLogin}>
+//             <h1>Sign In</h1>
+//             <input
+//               type="text"
+//               name="username"
+//               placeholder="Username"
+//               value={loginData.username}
+//               onChange={handleLoginChange}
+//               required
+//             />
+//             <input
+//               type="password"
+//               name="password"
+//               placeholder="Password"
+//               value={loginData.password}
+//               onChange={handleLoginChange}
+//               required
+//             />
+//             <button type="submit">Sign In</button>
+//             {message && <p style={{ color: 'red' }}>{message}</p>}
+//           </form>
+//         </div>
+
+//         {/* Toggle for Sign In / Sign Up */}
+//         <div className="toggle-container">
+//           <div className="toggle">
+//             <div className="toggle-panel toggle-left">
+//               <h1>Welcome Back!</h1>
+//               <p>Enter your personal details to access all site features.</p>
+//               <button onClick={() => setIsRegistering(false)}>Sign In</button>
+//             </div>
+//             <div className="toggle-panel toggle-right">
+//               <h1>Hello, Friend!</h1>
+//               <p>Register to start using all our features.</p>
+//               <button onClick={() => setIsRegistering(true)}>Sign Up</button>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Auth;
+
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import "../styles/loginStyles.css";
@@ -137,7 +349,42 @@ const Auth = () => {
   });
 
   const [message, setMessage] = useState('');
+  const [messageType, setMessageType] = useState('error'); // Default message type
   const [isRegistering, setIsRegistering] = useState(false);
+
+  const validateEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  const validatePhoneNumber = (phoneNumber) => /^\d{10}$/.test(phoneNumber);
+
+  const validateRegistrationInputs = () => {
+    const { username, password, email, phoneNumber, firstName, lastName } = formData;
+
+    if (!username || username.length < 3) {
+      setMessage("Username must be at least 3 characters.");
+      setMessageType('error');
+      return false;
+    }
+    if (!password || password.length < 6) {
+      setMessage("Password must be at least 6 characters.");
+      setMessageType('error');
+      return false;
+    }
+    if (!validateEmail(email)) {
+      setMessage("Invalid email address.");
+      setMessageType('error');
+      return false;
+    }
+    if (!validatePhoneNumber(phoneNumber)) {
+      setMessage("Phone number must be exactly 10 digits.");
+      setMessageType('error');
+      return false;
+    }
+    if (!firstName || !lastName) {
+      setMessage("First and last name are required.");
+      setMessageType('error');
+      return false;
+    }
+    return true;
+  };
 
   const handleRegisterChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -149,6 +396,8 @@ const Auth = () => {
 
   const handleRegister = async (e) => {
     e.preventDefault();
+    if (!validateRegistrationInputs()) return;
+
     try {
       const response = await fetch("https://webtechcontentbackend-production.up.railway.app/register", {
         method: "POST",
@@ -158,26 +407,28 @@ const Auth = () => {
         body: JSON.stringify(formData),
       });
 
-      const data = await response.json();
       if (response.ok) {
-        setMessage('Registration successful!');
-        setIsRegistering(false); // Switch to login view
+        setMessage("Registration successful!");
+        setMessageType("success");
+        setTimeout(() => setMessage(""), 4000); // Clear message after 4 seconds.
+        setIsRegistering(false);
+        setFormData({
+          username: '',
+          password: '',
+          email: '',
+          phoneNumber: '',
+          firstName: '',
+          lastName: '',
+          role: 'ROLE_USER',
+        });
       } else {
-        setMessage(data.message || 'Error registering');
+        const data = await response.json();
+        setMessage(data.message || "Error registering");
+        setMessageType("error");
       }
-
-      setFormData({
-        username: '',
-        password: '',
-        email: '',
-        phoneNumber: '',
-        firstName: '',
-        lastName: '',
-        role: 'ROLE_USER',
-      });
     } catch (error) {
-      console.error(error);
-      setMessage('');
+      setMessage("Registration error. Please try again.");
+      setMessageType("error");
     }
   };
 
@@ -193,20 +444,25 @@ const Auth = () => {
       });
 
       const data = await response.json();
-      if (response.ok && data.status === 'success') {
+      if (response.ok && data.status === "success") {
         const { role, token } = data;
-        localStorage.setItem('token', token);
-        localStorage.setItem('role', role);
+        localStorage.setItem("token", token);
+        localStorage.setItem("role", role);
 
-        setMessage('Login successful!');
-        if (role === 'ROLE_ADMIN') navigate('/admin');
-        else if (role === 'ROLE_SELLER') navigate('/seller');
-        else if (role === 'ROLE_USER') navigate('/customer');
+        setMessage("Login successful!");
+        setMessageType("success");
+        setTimeout(() => setMessage(""), 4000); // Clear message after 4 seconds.
+
+        if (role === "ROLE_ADMIN") navigate("/admin");
+        else if (role === "ROLE_SELLER") navigate("/seller");
+        else if (role === "ROLE_USER") navigate("/customer");
       } else {
-        setMessage(data.message || 'Login failed');
+        setMessage(data.message || "Login failed");
+        setMessageType("error");
       }
     } catch (error) {
-      setMessage(error.message || 'Error logging in');
+      setMessage("Login error. Please try again.");
+      setMessageType("error");
     }
   };
 
@@ -276,7 +532,7 @@ const Auth = () => {
               <option value="ROLE_SELLER">Seller</option>
             </select>
             <button type="submit">Sign Up</button>
-            {message && <p style={{ color: 'red' }}>{message}</p>}
+            {message && <p className={`notification-message ${messageType}`}>{message}</p>}
           </form>
         </div>
 
@@ -301,7 +557,7 @@ const Auth = () => {
               required
             />
             <button type="submit">Sign In</button>
-            {message && <p style={{ color: 'red' }}>{message}</p>}
+            {message && <p className={`notification-message ${messageType}`}>{message}</p>}
           </form>
         </div>
 
