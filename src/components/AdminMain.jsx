@@ -1,4 +1,4 @@
-import "../styles/adminstyles.css";
+import "../styles/adminpage.css";
 import React, { useState, useEffect } from "react";
 
 function AdminMain() {

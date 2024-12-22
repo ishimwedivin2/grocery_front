@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/adminstyles.css";
+import "../styles/adminnav.css";
 import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = ({ active, language, onLanguageChange }) => {
@@ -23,19 +23,13 @@ const Navbar = ({ active, language, onLanguageChange }) => {
           <span>Users</span>
         </a>
         <a
-          href="/admin/furniture"
+          href="/admin"
           className={`nav-link ${active === "furniture" ? "active" : ""}`}
         >
           <i className=""></i>
           <span>Product</span>
         </a>
-        <a
-          href="/admin/orders"
-          className={`nav-link ${active === "orders" ? "active" : ""}`}
-        >
-          <i className="fas fa-shopping-cart"></i>
-          <span>Orders</span>
-        </a>
+
         <a
           href="/admin/notifications"
           className={`nav-link ${active === "notifications" ? "active" : ""}`}

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ReactApexChart from "react-apexcharts";
-import "../styles/adminstyles.css";
+//import "../styles/analytic.css";
 
 const AnalyticsBody = () => {
   const [roleStats, setRoleStats] = useState({});
