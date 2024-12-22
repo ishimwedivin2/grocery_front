@@ -1,10 +1,10 @@
 import React from "react";
 import "../styles/sty.css";
 import img1 from "../assets/img/delivery.jpg";
-import img2 from "../assets/img/greenvege.jpg";
-import img3 from "../assets/img/inyange.jpg";
-import img4 from "../assets/img/pine.jpg";
-import img5 from "../assets/img/support.jpg";
+import img2 from "../assets/img/online.jpg";
+import img3 from "../assets/img/fresh.jpg";
+import img4 from "../assets/img/ss.jpg";
+import img5 from "../assets/img/customer.jpg";
 
 const OurService = () => {
   return (
