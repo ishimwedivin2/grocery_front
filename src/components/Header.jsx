@@ -38,7 +38,7 @@ const Header = () => {
           <button className="search-button">
             <FontAwesomeIcon icon={faSearch} /> Search
           </button>
-          <Link to="/cart" className="cart-icon">
+          <Link to="/products" className="cart-icon">
             <FontAwesomeIcon icon={faShoppingCart} />
           </Link>
         </div>

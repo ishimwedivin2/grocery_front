@@ -1,51 +1,99 @@
 /* AboutUsBody.css */
 
+/* General styling for the About Us section */
 #about-us {
-    padding: 20px;
-    background-color: #f5f5f5;
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+p.vision {
+  font-size: 1.25rem;
+  margin: 20px 0;
+  color: #7f8c8d;
+}
+
+/* Styling for the team section */
+.team-section {
+  margin-top: 40px;
+}
+
+.team-section h3 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #34495e;
+}
+
+.team-members {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.team-member {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-color: #fafafa;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.team-member h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #2980b9;
+}
+
+.team-member p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #7f8c8d;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2rem;
   }
-  
-  .about-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
+
+  p.vision {
+    font-size: 1.1rem;
   }
-  
-  .vision {
-    font-style: italic;
-    margin-bottom: 20px;
-    font-size: 18px;
+
+  .team-section h3 {
+    font-size: 1.75rem;
   }
-  
-  .team-section {
-    margin-top: 40px;
-  }
-  
-  .team-members {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-  }
-  
-  .team-member {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 30%;
-  }
-  
+
   .team-member h4 {
-    font-size: 22px;
-    color: #333;
+    font-size: 1.25rem;
   }
-  
+
   .team-member p {
-    font-size: 16px;
-    color: #555;
+    font-size: 0.95rem;
   }
-  
-  .team-member p:first-of-type {
-    font-weight: bold;
-  }
-  
+}
