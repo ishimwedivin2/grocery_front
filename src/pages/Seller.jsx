@@ -19,7 +19,7 @@ function Seller() {
   const fetchNotifications = async () => {
     try {
       const response = await axios.get(
-        "https://webtechcontentbackend-production.up.railway.app/notifications/user/unread"
+        "https://backend-production-bbec.up.railway.app/notifications/user/unread"
       );
       setNotifications(response.data);
     } catch (error) {
@@ -30,7 +30,7 @@ function Seller() {
   const markAllAsRead = async () => {
     try {
       await axios.put(
-        "https://webtechcontentbackend-production.up.railway.app/notifications/user/mark-all-as-read"
+        "https://backend-production-bbec.up.railway.app/notifications/user/mark-all-as-read"
       );
       setNotifications([]);
     } catch (error) {

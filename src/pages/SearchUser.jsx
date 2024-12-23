@@ -18,7 +18,7 @@ function SearchUser() {
 
     try {
       const response = await fetch(
-        `https://webtechcontentbackend-production.up.railway.app/admin/search/results?username=${username}`
+        `https://backend-production-bbec.up.railway.app/admin/search/results?username=${username}`
       );
 
       if (!response.ok) {

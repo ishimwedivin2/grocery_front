@@ -11,7 +11,7 @@ function UserProfile() {
     const fetchUserProfile = async () => {
       try {
         // Change this API URL to use the `id` query parameter, as expected by your backend
-        const response = await fetch(`https://webtechcontentbackend-production.up.railway.app/user?id=${userId}`);
+        const response = await fetch(`https://backend-production-bbec.up.railway.app/user?id=${userId}`);
         if (!response.ok) {
           throw new Error(`Error: ${response.statusText}`);
         }

@@ -7,7 +7,7 @@ const ExportData = () => {
     try {
       // Send GET request to the backend endpoint
       const response = await axios.get(
-        "https://webtechcontentbackend-production.up.railway.app/admin/download/users",
+        "https://backend-production-bbec.up.railway.app/admin/download/users",
         {
           responseType: "blob", // Ensures the response is treated as a file
         }

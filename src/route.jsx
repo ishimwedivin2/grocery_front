@@ -19,8 +19,12 @@ import Notification from "./pages/Notification";
 import ExportData from "./pages/ExportData";
 import Seller from "./pages/Seller";
 import AboutUsPage from "./pages/AboutUsPage"; // Updated import
-
-
+import SellerPage from "./pages/SellerPage"; // Updated import
+import CustomerPage from "./pages/CustomerPage";
+import AddProductForm from "./components/AddProductForm";
+import Cart from "./components/Cart";
+import CustomerProducts from "./components/CustomerProducts";
+import SellerProducts from "./components/SellerProducts";
 
 
 const router = createBrowserRouter([
@@ -96,6 +100,30 @@ const router = createBrowserRouter([
     path: "/aboutus",
     element: <AboutUsPage />, // Updated route
   },
+  {
+    path: "/sellerpage",
+    element: <SellerPage />,
+  },
+  {
+    path: "/customerpage",
+    element: <CustomerPage />, // Updated route
+  },
+  {
+    path: "/add-product",
+    element: <AddProductForm />,
+  },
+  {
+    path: "/cart",
+    element: <Cart />,
+  },
+  {
+    path: "/customer/products",
+    element: <CustomerProducts />,
+  },
+  {
+    path: "/seller/products",
+    element: <SellerProducts />,
+  }
 ]);
 
 export default router;
