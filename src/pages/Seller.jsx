@@ -50,7 +50,7 @@ function Seller() {
     <section id="seller-section">
       {/* Header */}
       <div className="header">
-        <h2>Seller Dashboard</h2>
+        <h2>Welcome To Seller Dashboard</h2>
       </div>
 
       {/* Notifications Section */}
