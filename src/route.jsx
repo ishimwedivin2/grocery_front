@@ -20,6 +20,7 @@ import ExportData from "./pages/ExportData";
 import Seller from "./pages/Seller";
 import AboutUsPage from "./pages/AboutUsPage"; // Updated import
 import SellerPage from "./pages/SellerPage"; // Updated import
+import Customer from "./pages/Customer";
 import CustomerPage from "./pages/CustomerPage";
 import AddProductForm from "./components/AddProductForm";
 import Cart from "./components/Cart";
@@ -95,6 +96,10 @@ const router = createBrowserRouter([
   {
     path: "/seller",
     element: <Seller />,
+  },
+  {
+    path: "/customer",
+    element: <Customer />,
   },
   {
     path: "/aboutus",
