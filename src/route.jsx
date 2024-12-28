@@ -24,7 +24,7 @@ import Customer from "./pages/Customer";
 import CustomerPage from "./pages/CustomerPage";
 import AddProductForm from "./components/AddProductForm";
 import Cart from "./components/Cart";
-import CustomerProducts from "./components/CustomerProducts";
+//import CustomerProducts from "./components/CustomerProducts";
 import SellerProducts from "./components/SellerProducts";
 
 
@@ -121,10 +121,10 @@ const router = createBrowserRouter([
     path: "/cart",
     element: <Cart />,
   },
-  {
-    path: "/customer/products",
-    element: <CustomerProducts />,
-  },
+  // {
+  //   path: "/customer/products",
+  //   element: <CustomerProducts />,
+  // },
   {
     path: "/seller/products",
     element: <SellerProducts />,

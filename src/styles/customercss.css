@@ -24,12 +24,15 @@
   }
   
   .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Ensures items wrap to the next row if needed */
+    gap: 20px; /* Space between items */
+    justify-content: center; /* Center items horizontally */
   }
   
   .product-card {
+    flex: 1 1 calc(200px - 20px); /* Adjusts width, ensures flexibility */
+    max-width: 300px; /* Prevents items from being too wide */
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 15px;

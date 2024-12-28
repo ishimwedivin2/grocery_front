@@ -528,9 +528,10 @@ const Auth = () => {
               required
             >
               <option value="" disabled>Select Role</option>
-              <option value="ROLE_ADMIN">ADMIN</option>
-              <option value="ROLE_USER">Customer</option>
+              <option value="ROLE_ADMIN">Admin</option>
               <option value="ROLE_SELLER">Seller</option>
+              <option value="ROLE_USER">Customer</option>
+              
             </select>
             <button type="submit">Sign Up</button>
             {message && <p className={`notification-message ${messageType}`}>{message}</p>}

@@ -1,6 +1,34 @@
 import React from "react";
 import "../styles/styles.css"; // Adjust the path as needed
 
+const products = [
+  { name: "Mango", price: 7, imgSrc: "/assets/img/mango.jpg", alt: "Mango" },
+  { name: "Coffee", price: 2, imgSrc: "/img/coffee.jpg", alt: "Coffee" },
+  { name: "Pine Apple", price: 4, imgSrc: "/img/pine-apple.jpg", alt: "Pine Apple" },
+  { name: "Apple", price: 5, imgSrc: "/img/apple.jpg", alt: "Apple" },
+  { name: "Orange", price: 3, imgSrc: "/img/orange.jpg", alt: "Orange" },
+  { name: "Avocado", price: 5, imgSrc: "/img/avocado.jpg", alt: "Avocado" },
+  { name: "Milk", price: 8, imgSrc: "/img/milk.jpg", alt: "Milk" },
+  { name: "Vegetable", price: 4, imgSrc: "/img/vegetable.jpg", alt: "Vegetable" },
+];
+
+function ProductCard({ product, onBuyNow }) {
+  return (
+    <div className="product-card">
+      <div className="product-image">
+        <img src={product.imgSrc} alt={product.alt} />
+      </div>
+      <div className="product-details">
+        <h3>{product.name}</h3>
+        <p className="price">${product.price}</p>
+        <button className="btn-filled-dark" onClick={onBuyNow}>
+          Buy Now
+        </button>
+      </div>
+    </div>
+  );
+}
+
 function ProductShow() {
   const promptLogin = () => {
     const userResponse = window.confirm(
@@ -19,108 +47,14 @@ function ProductShow() {
         Explore our exclusive collection of products.
       </p>
 
-      {/* Living Room Furniture */}
       <div className="category">
         <div className="category-header">
           <h3>Grocery Products</h3>
         </div>
         <div className="product-grid">
-          <div className="product-card">
-            <div className="product-image">
-              <img src="/img/sofa.jpg" alt="M" />
-            </div>
-            <div className="product-details">
-              <h3>Mango</h3>
-              <p className="price">$7</p>
-              <button className="btn-filled-dark" onClick={promptLogin}>
-                Buy Now
-              </button>
-            </div>
-          </div>
-          <div className="product-card">
-            <div className="product-image">
-              <img src="/img/coffee-table.jpg" alt="M" />
-            </div>
-            <div className="product-details">
-              <h3>Coffee</h3>
-              <p className="price">$2</p>
-              <button className="btn-filled-dark" onClick={promptLogin}>
-                Buy Now
-              </button>
-            </div>
-          </div>
-          <div className="product-card">
-            <div className="product-image">
-              <img src="/img/armchair.jpg" alt="C" />
-            </div>
-            <div className="product-details">
-              <h3>Pine Apple</h3>
-              <p className="price">$4</p>
-              <button className="btn-filled-dark" onClick={promptLogin}>
-                Buy Now
-              </button>
-            </div>
-          </div>
-          <div className="product-card">
-            <div className="product-image">
-              <img src="/img/entertainment-unit.jpg" alt="G" />
-            </div>
-            <div className="product-details">
-              <h3>Apple</h3>
-              <p className="price">$5</p>
-              <button className="btn-filled-dark" onClick={promptLogin}>
-                Buy Now
-              </button>
-            </div>
-          </div>
-          <div className="product-card">
-            <div className="product-image">
-              <img src="/img/entertainment-unit.jpg" alt="G" />
-            </div>
-            <div className="product-details">
-              <h3>Orange</h3>
-              <p className="price">$3</p>
-              <button className="btn-filled-dark" onClick={promptLogin}>
-                Buy Now
-              </button>
-            </div>
-          </div>
-          <div className="product-card">
-            <div className="product-image">
-              <img src="/img/entertainment-unit.jpg" alt="G" />
-            </div>
-            <div className="product-details">
-              <h3>Avocado</h3>
-              <p className="price">$5</p>
-              <button className="btn-filled-dark" onClick={promptLogin}>
-                Buy Now
-              </button>
-            </div>
-          </div>
-          <div className="product-card">
-            <div className="product-image">
-              <img src="/img/entertainment-unit.jpg" alt="G" />
-            </div>
-            <div className="product-details">
-              <h3>Milk</h3>
-              <p className="price">$8</p>
-              <button className="btn-filled-dark" onClick={promptLogin}>
-                Buy Now
-              </button>
-            </div>
-          </div>
-          <div className="product-card">
-            <div className="product-image">
-              <img src="/img/entertainment-unit.jpg" alt="E" />
-            </div>
-            <div className="product-details">
-              <h3>Vegetable</h3>
-              <p className="price">$4</p>
-              <button className="btn-filled-dark" onClick={promptLogin}>
-                Buy Now
-              </button>
-            </div>
-          </div>
+          {products.map((product) => (
+            <ProductCard key={product.name} product={product} onBuyNow={promptLogin} />
+          ))}
         </div>
       </div>
     </section>
