@@ -153,8 +153,10 @@
 // };
 
 // export default OurService;
+
+
 import React from "react";
-import "../styles/ourService.css";
+import "../styles/OurService.css";
 import img1 from "../assets/img/delivery.jpg";
 import img2 from "../assets/img/online.jpg";
 import img3 from "../assets/img/fresh.jpg";
