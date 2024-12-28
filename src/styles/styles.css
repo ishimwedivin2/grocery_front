@@ -385,7 +385,7 @@
   section.hero {
     /*    width: 100%;*/
     height: 55vh;
-    background: #0faa8b url("../assets/img/grocery.jpg") no-repeat center right;
+    background: #14a789 url("../assets/img/grocery.jpg") no-repeat center right;
 
     display: flex;
     flex-direction: column;
